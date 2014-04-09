@@ -10,8 +10,6 @@ rm -rf $SRC/toolchain
 mkdir -p $SRC/toolchain
 
 red ": patching"
-tar xvf $SRC/tarball/linux-$KERNEL_VER.tar.bz2
-mv linux-$KERNEL_VER kernel
 cp $CNF/ct-ng-$CTNG_VER .config
 $CT_NG oldconfig
 
