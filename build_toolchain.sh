@@ -10,6 +10,7 @@ rm -rf $SRC/toolchain
 mkdir -p $SRC/toolchain
 
 red ": patching"
+cd $SRC/toolchain
 cp $CNF/ct-ng-$CTNG_VER .config
 $CT_NG oldconfig
 
