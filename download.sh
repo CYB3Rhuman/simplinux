@@ -1,6 +1,5 @@
 #!/bin/bash
 
-[ "$HOME" != "" ] && exec -c $0
 THIS="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 . $THIS/vars
