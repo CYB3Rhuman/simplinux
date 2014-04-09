@@ -10,3 +10,11 @@ CTNG_VER="1.19.0"
 KERNEL_VER="3.12.17"
 TOYBOX_VER="0.4.7"
 
+# cross-tool
+CT_NG=$SRC/ct-ng/bin/ct-ng
+
+# toolchain
+TOOLS_PREFIX="x86_64-cyb3r-linux-gnu-"
+TOOLS_DIR="$SRC/tools/x86_64-cyb3r-linux-gnu/bin"
+TOOLS="$TOOLS_DIR/$TOOLS_PREFIX"
+
