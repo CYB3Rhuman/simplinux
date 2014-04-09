@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# local directories
+CNF="$THIS/cnf"
+OUT="$THIS/out"
+SRC="$THIS/src"
+
+# versions
+CTNG_VER="1.19.0"
+KERNEL_VER="3.12.17"
+TOYBOX_VER="0.4.7"
+

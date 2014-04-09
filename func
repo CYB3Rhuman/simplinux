@@ -1,0 +1,9 @@
+#!/bin/bash
+
+function red() {
+echo -e "\e[00;31m$@\e[00m"
+}
+
+function download() {
+wget -nc $1
+}

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+KERNEL_LINK="ftp://kernel.org/pub/linux/kernel/v3.x/linux-$KERNEL_VER.tar.xz"
+TOYBOX_LINK="http://www.landley.net/toybox/downloads/toybox-$TOYBOX_VER.tar.bz2"
+CTNG_LINK="http://crosstool-ng.org/download/crosstool-ng/crosstool-ng-$CTNG_VER.tar.bz2"
