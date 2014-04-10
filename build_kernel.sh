@@ -16,9 +16,8 @@ cd linux-$KERNEL_VER
 
 red ": patching"
 make mrproper
-make defconfig
-#cp $CNF/linux-$KERNEL_VER .config
-#make oldconfig
+cp $CNF/linux-$KERNEL_VER .config
+make oldconfig
 
 red ": compiling"
 make CROSS_COMPILE=$TOOLS
