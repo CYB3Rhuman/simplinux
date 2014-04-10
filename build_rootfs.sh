@@ -11,7 +11,9 @@ rm -rf $OUT/initramfs.cpio*
 
 red ": copying"
 mkdir -p $SRC/rootfs
-cp -R $SRC/*-bin/* $SRC/rootfs
+#cp -R $SRC/*-bin/* $SRC/rootfs
+mkdir $SRC/rootfs/bin
+cp $SRC/toybox-$TOYBOX_VER/toybox $SRC/rootfs/bin
 cp $CNF/init $SRC/rootfs/init
 
 red ": packing"

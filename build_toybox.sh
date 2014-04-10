@@ -21,6 +21,5 @@ make oldconfig
 
 red ": compiling"
 CFLAGS="--static" CROSS_COMPILE=$TOOLS make
-PREFIX=$SRC/toybox-bin make install
 
 red ": done"
