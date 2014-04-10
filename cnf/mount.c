@@ -26,9 +26,9 @@ void mount_main(void)
     error_exit("Do not know what to do with only 1 argument.");
   } else if (toys.optc == 2 && (toys.optflags ^ FLAG_t)) {
     if (mount(toys.optargs[0], toys.optargs[1], "", 0, "")) {
-      perror_exit("Mounting failed");
+      perror_exit("mounting %s on %s failed", toys.optargs[0], toys.optargs[1]);
     } else {
-      xprintf("Mounted successfully!\n");
+      xprintf("mounting %s on %s: success\n", toys.optargs[0], toys.optargs[1]);
     }
   } else if (toys.optc == 3 && (toys.optflags & FLAG_t)) {
     char *dev, *dir, *type;
@@ -47,9 +47,9 @@ void mount_main(void)
       type = toys.optargs[1];
     }
     if (mount(dev, dir, type, 0, "")) {
-      perror_exit("Mounting failed");
+      perror_exit("mounting %s on %s type %s failed", dev, dir, type);
     } else {
-      xprintf("Mounted successfully!\n");
+      xprintf("mounting %s on %s type %s: success\n", dev, dir, type);
     }
   } else {
     error_exit("Do not know what to do with %d arguments.", toys.optc);
