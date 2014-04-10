@@ -15,6 +15,6 @@ cp $CNF/ct-ng-$CTNG_VER .config
 $CT_NG oldconfig
 
 red ": compiling"
-$CT_NG build
+SRC=$SRC KERNEL_VER=$KERNEL_VER $CT_NG build
 
 red ": done"
