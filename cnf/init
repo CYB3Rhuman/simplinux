@@ -1,10 +1,12 @@
 #!/bin/toybox sh
 
-mkdir /proc /sys
+mkdir /proc /sys /tmp
 mount -t proc proc /proc
 mount -t sysfs sys /sys
 mount -t devtmpfs devtmpfs /dev
+mount -t tmpfs tmpfs /tmp
 
-echo "Hello World!"
+echo Hello World
 
 sh
+exit
