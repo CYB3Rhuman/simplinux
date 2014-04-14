@@ -7,7 +7,6 @@ THIS="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 red ": cleaning"
 rm -rf $SRC/toybox-*
-rm -rf $SRC/to-rootfs/bin/toybox
 
 red ": unpacking"
 cd $SRC
@@ -21,8 +20,8 @@ cp $CNF/toybox-$TOYBOX_VER .config
 make oldconfig
 
 red ": compiling"
-CFLAGS="--static" CROSS_COMPILE=$TOOLS make
-mkdir -p $SRC/to-rootfs/bin
-cp $SRC/toybox-$TOYBOX_VER/toybox $SRC/to-rootfs/bin
+#CFLAGS="--static" CROSS_COMPILE=$TOOLS make
+CROSS_COMPILE=$TOOLS make
+PREFIX=$SRC/toybox-bin make install
 
 red ": done"

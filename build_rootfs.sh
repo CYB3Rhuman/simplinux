@@ -11,8 +11,7 @@ rm -rf $OUT/initramfs.cpio*
 
 red ": copying"
 mkdir -p $SRC/rootfs
-mkdir -p $SRC/to-rootfs
-cp -R $SRC/to-rootfs/* $SRC/rootfs
+cp -R $SRC/*-bin/* $SRC/rootfs
 cp $CNF/init $SRC/rootfs/init
 
 red ": packing"
