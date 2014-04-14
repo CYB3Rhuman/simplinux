@@ -18,6 +18,7 @@ CT_NG=$SRC/ct-ng/bin/ct-ng
 TOOLS_PREFIX="x86_64-cyb3r-linux-gnu-"
 TOOLS_DIR="$SRC/tools/x86_64-cyb3r-linux-gnu/bin"
 TOOLS="$TOOLS_DIR/$TOOLS_PREFIX"
+TOOLS_SYSROOT="$SRC/tools/x86_64-cyb3r-linux-gnu/x86_64-cyb3r-linux-gnu/sysroot"
 
 # qemu
 QEMU="qemu-system-x86_64"
