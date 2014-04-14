@@ -1,4 +1,4 @@
-#!/bin/toybox sh
+#!/bin/dash
 
 mkdir /proc /sys /tmp
 mount -t proc proc /proc
@@ -8,5 +8,5 @@ mount -t tmpfs tmpfs /tmp
 
 echo Hello World
 
-sh
+dash
 exit
