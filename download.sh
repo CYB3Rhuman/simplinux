@@ -12,5 +12,6 @@ cd $SRC/tarball
 download $CTNG_LINK
 download $KERNEL_LINK
 download $TOYBOX_LINK
+download $DASH_LINK
 
 red ": done"

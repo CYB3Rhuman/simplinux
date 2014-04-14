@@ -9,6 +9,7 @@ SRC="$THIS/src"
 CTNG_VER="1.19.0"
 KERNEL_VER="3.12.17"
 TOYBOX_VER="0.4.7"
+DASH_VER="0.5.7"
 
 # cross-tool
 CT_NG=$SRC/ct-ng/bin/ct-ng
